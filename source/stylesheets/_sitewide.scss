@@ -1,0 +1,20 @@
+html:root {
+  @media (min-width: $screen-sm-min) {
+    font-size: 18px;
+  }
+  font-size: 16px;
+}
+
+body {
+  background-color: $white;
+  padding-top: 5%;
+  font-family: 'Vollkorn', serif;
+}
+
+p {
+  font-size: 1rem;
+}
+
+a {
+  color: $lightblue;
+}
