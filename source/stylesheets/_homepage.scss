@@ -25,5 +25,27 @@
 .tweet {
   background-color: $grey;
   padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
   border-radius: 5%;
+}
+
+.tweet-header {
+  margin-bottom: 5px;
+  border-bottom: 1px solid #B0B0B0;
+}
+
+.twitter-username-link:link {
+  //text-decoration: none;
+  font-size: 1rem;
+}
+
+.twitter-username {
+  text-decoration: none;
+  color: $lightgrey;
+  font-size: 0.7rem;
+}
+
+.tweet-date {
+  color: $lightgrey;
 }

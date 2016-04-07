@@ -18,3 +18,11 @@ p {
 a {
   color: $lightblue;
 }
+
+.underline-hover:hover {
+  text-decoration: underline;
+}
+
+.underline {
+  text-decoration: underline;
+}
