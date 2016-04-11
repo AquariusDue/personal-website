@@ -1,6 +1,46 @@
 #my-photo {
   border-radius: 8px;
+  //margin-left: 7.5%;
+  max-width: 100%;
 }
+
+#photo-container {
+  padding-left: 4.5%;
+  padding-right: 4.5%;
+  padding-top: 20px;
+}
+
+// Homepage Social Media CSS
+.social-icons {
+  width: 40px;
+  height: 25px;
+  display: inline-block;
+}
+
+#social-media {
+  margin-top: 20px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#twitter-icon {
+  fill: #333;
+}
+
+#twitter-icon:hover {
+  fill: #5ea9dd;
+}
+
+.icon-animation {
+  transition: fill 0.2s ease-in,
+              transform 0.2s ease-out;
+}
+
+.icon-animation:hover{
+  transform: perspective(1000px) translate3d(0px,-2px,0px);
+}
+
+// End of Social Media CSS
 
 #name, #tagline {
   text-align: center;
