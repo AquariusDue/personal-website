@@ -12,6 +12,16 @@
 
 // Homepage Social Media CSS
 .social-icons {
+  display: inline-block;
+  width: 40px;
+  height: 30px;
+  @media (min-width: $screen-sm-min) {
+    width: 50px;
+    height: 40px;
+  }
+}
+
+.social-icons-inline {
   width: 40px;
   height: 25px;
   display: inline-block;
@@ -31,6 +41,22 @@
   fill: #5ea9dd;
 }
 
+#github-icon {
+  fill: #1b1817;
+}
+
+#github-icon:hover {
+  fill: $lightgrey;
+}
+
+#youtube-icon {
+  fill: #333;
+}
+
+#youtube-icon:hover {
+  fill: red;
+}
+
 .icon-animation {
   transition: fill 0.2s ease-in,
               transform 0.2s ease-out;
@@ -38,6 +64,57 @@
 
 .icon-animation:hover{
   transform: perspective(1000px) translate3d(0px,-2px,0px);
+}
+
+#hello-button {
+  vertical-align: top;
+  width: 50%;
+
+  // Adjust width for tablets
+  @media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+    width: 45%;
+  }
+
+  // Adjust height for desktop
+  @media (min-width: $screen-sm-min) {
+    height: 40px;
+  }
+  height: 35px;
+  margin-left: 30px;
+  background-color: $white;
+  display: inline-block;
+  border-radius: 5%;
+  border: 2px solid $lightgrey;
+  transition: background-color 0.2s ease-in, border-color 0.2s ease-in, color 0.2s ease-in;
+}
+
+#hello-button > p {
+  font-size: 100%;
+  padding-top: 8px;
+  padding-left: 10%;
+  word-wrap: break-word;
+  @media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+    padding-left: 33px;
+    padding-top: 8px;
+    font-size: 1rem;
+  }
+  @media (min-width: $screen-lg-min) {
+    padding-top: 8px;
+    padding-left: 28px;
+    font-size: 1rem;
+  }
+
+  @media (min-width: $screen-md-min) and (max-width: $screen-md-max) {
+    font-size: 0.8rem;
+    padding-left: 26px;
+    padding-top: 9px;
+  }
+}
+
+#hello-button:hover {
+  background-color: #475090;
+  color: $white;
+  border-color: #475090;
 }
 
 // End of Social Media CSS
