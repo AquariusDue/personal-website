@@ -139,6 +139,8 @@
   margin-bottom: 2rem;
 }
 
+// Start of Twitter Widget CSS
+
 .tweet {
   background-color: $grey;
   padding: 10px;
@@ -166,3 +168,30 @@
 .tweet-date {
   color: $lightgrey;
 }
+
+// End of Twitter Widget CSS
+
+//--------------------------
+
+// Start of Homepage Blog CSS
+
+.blog-header {
+  text-align: center;
+}
+
+#blog-title {
+  margin-top: 60px;
+}
+
+#blog-tagline {
+  margin-bottom: 30px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  border-bottom: 2px solid #C2C2C2;
+  border-top: 1px solid #C2C2C2;
+}
+
+// End of Homepage Blog CSS
