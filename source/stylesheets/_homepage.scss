@@ -69,7 +69,11 @@
 #hello-button {
   vertical-align: top;
   width: 50%;
-
+  margin-left: 30px;
+  // Adjust margin for very small phones
+  @media (max-width: 340px) {
+    margin-left: 10px;
+  }
   // Adjust width for tablets
   @media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
     width: 45%;
@@ -78,9 +82,9 @@
   // Adjust height for desktop
   @media (min-width: $screen-sm-min) {
     height: 40px;
+
   }
   height: 35px;
-  margin-left: 30px;
   background-color: $white;
   display: inline-block;
   border-radius: 5%;
@@ -89,24 +93,25 @@
 }
 
 #hello-button > p {
-  font-size: 100%;
+  //font-size: 100%;
   padding-top: 8px;
-  padding-left: 10%;
+  //padding-left: 10%;
   word-wrap: break-word;
+  text-align: center;
   @media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
-    padding-left: 33px;
+    //padding-left: 33px;
     padding-top: 8px;
-    font-size: 1rem;
+    //font-size: 1rem;
   }
   @media (min-width: $screen-lg-min) {
     padding-top: 8px;
-    padding-left: 28px;
-    font-size: 1rem;
+    //padding-left: 28px;
+    //font-size: 1rem;
   }
 
   @media (min-width: $screen-md-min) and (max-width: $screen-md-max) {
-    font-size: 0.8rem;
-    padding-left: 26px;
+    //font-size: 0.8rem;
+    //padding-left: 26px;
     padding-top: 9px;
   }
 }
@@ -126,17 +131,20 @@
 #name {
   margin-bottom: 0;
   @media (min-width: $screen-sm-min) {
-    font-size: 2.2rem;
+    //font-size: 2.2rem;
   }
-  font-size: 1.3rem;
+  //font-size: 1.3rem;
   border-bottom: 1px solid $grey;
   padding-bottom: 6px;
 }
 
 #tagline {
   margin-top: 12px;
-  font-size: 1.5rem;
-  margin-bottom: 2rem;
+  font-size: 28px;
+}
+
+#contact {
+  font-size: 22px;
 }
 
 // Start of Twitter Widget CSS
@@ -156,13 +164,13 @@
 
 .twitter-username-link:link {
   //text-decoration: none;
-  font-size: 1rem;
+  //font-size: 1rem;
 }
 
 .twitter-username {
   text-decoration: none;
   color: $lightgrey;
-  font-size: 0.7rem;
+  //font-size: 0.7rem;
 }
 
 .tweet-date {
