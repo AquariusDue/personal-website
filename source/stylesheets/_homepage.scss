@@ -198,8 +198,16 @@
   width: 50%;
   margin-left: auto;
   margin-right: auto;
-  border-bottom: 2px solid #C2C2C2;
-  border-top: 1px solid #C2C2C2;
+  border-bottom: 1px solid $grey;
+  border-top: 2px solid $grey;
+}
+
+.blog-post-title-home {
+  font-size: 26px;
+}
+
+.blog-post-date-home {
+  color: $mediumgrey;
 }
 
 // End of Homepage Blog CSS
