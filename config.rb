@@ -25,6 +25,12 @@ activate :external_pipeline,
 
 activate :autoprefixer
 
+activate :blog do |blog|
+  blog.prefix = "blog"
+end
+
+activate :directory_indexes
+
 ###
 # Helpers
 ###
