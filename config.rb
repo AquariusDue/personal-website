@@ -9,6 +9,8 @@ page '/*.xml', layout: false
 page '/*.json', layout: false
 page '/*.txt', layout: false
 
+page "/feed.xml", layout: false
+
 # With alternative layout
 # page "/path/to/file.html", layout: :otherlayout
 
@@ -27,6 +29,8 @@ activate :autoprefixer
 
 activate :blog do |blog|
   blog.prefix = "blog"
+  blog.sources = "{year}-{month}-{day}-{title}.html"
+  blog.permalink = "{year}/{month}/{title}.html"
 end
 
 activate :directory_indexes
