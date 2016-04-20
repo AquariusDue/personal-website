@@ -12,10 +12,12 @@
     <link href='https://fonts.googleapis.com/css?family=Vollkorn:400,700,400italic' rel='stylesheet' type='text/css'>
 
     <%= stylesheet_link_tag :site %>
-    <%= javascript_include_tag :all %>
+
   </head>
 
   <body class="<%= page_classes %>">
     <%= yield %>
+    <script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
+    <%= javascript_include_tag :all %>
   </body>
 </html>
